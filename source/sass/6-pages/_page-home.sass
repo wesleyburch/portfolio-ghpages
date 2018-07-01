@@ -1,0 +1,306 @@
+body
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: relative
+  // scroll-behavior: smooth
+
+.contact-me-link-left, .contact-me-link-right
+  font-size: .90em
+  color: #5a5959
+  position: fixed
+  top: 345px
+  z-index: 1
+
+  @media only screen and (max-width: 680px)
+    visibility: hidden
+
+.contact-me-link-left
+  left: 10px
+  -webkit-transform: rotate(-90deg)
+  -moz-transform: rotate(-90deg)
+  -o-transform: rotate(-90deg)
+  -ms-transform: rotate(-90deg)
+  transform: rotate(-90deg)
+
+.contact-me-link-right
+  right: 10px
+  -webkit-transform: rotate(90deg)
+  -moz-transform: rotate(90deg)
+  -o-transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  transform: rotate(90deg)
+
+#page-home
+  padding-bottom: 250px
+
+#page-home, #portfolio-section
+  margin: 20px
+  display: flex
+
+.intro-text
+  opacity: 0
+
+.wrapper-starter
+  width: 100%
+  padding: 30px 
+  text-align: center
+
+  p
+    color: #fdf8e1
+    text-align: left
+    font-size: 25px
+    padding-left: 15px
+    line-height: .7em
+    @media only screen and (max-width: 480px)
+      font-size: 1em
+      padding-left: 5px
+  
+  .alt-color-word
+    color: #797152
+  
+.triangle-hero
+  position: absolute
+  content: " "
+  border: 5px solid red
+  top: 650px
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 30px
+  border-color: #797152 transparent transparent transparent;
+  animation: pulse 1s 6
+  @media only screen and (max-width: 480px)
+    border-width: 20px 20px 0 20px
+
+@keyframes pulse    
+  100% 
+    top: 640px
+  
+h1
+  margin-bottom: 5px
+  @media only screen and (max-width: 480px)
+    margin-top: 50%
+  
+
+
+//**************************************************\\
+//**************** END HERO SECTION ****************\\
+//**************************************************\\
+
+
+// Animations
+
+.rotate 
+  transition-duration: .250s
+
+.rotate-on-click
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+
+
+
+  
+//**************************************************\\
+//**************** PROJECT SECTION *****************\\
+//**************************************************\\
+
+#portfolio-section
+  margin-top: 50px
+  width: 100%
+  @media only screen and (max-width: 380px)
+    width: 100%
+
+.section-header
+  padding-top: 25px
+  width: 80%
+  margin: 0 auto
+  text-align: center
+  position: relative
+  // color: #1b1b1b
+  font-weight: 900
+  // background-color: #fdd835
+  padding-bottom: 25px
+  // clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 50%, 0 0)
+  border-radius: 0 0 5px 0
+  opacity: 0
+  @media only screen and (max-width: 380px)
+    width: 100%
+    font-size: 30px
+  
+.header-border
+  border-bottom: solid 5px #fdd835
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 75px
+  -webkit-transition: width 1s ease-out
+  transition: width .75s  ease-out
+
+.grow
+  width: 20%
+  
+
+.section-wrapper
+  width: 100%
+  padding: 0 0 100px 0px 
+  margin-left: auto
+  margin-right: auto
+  @media only screen and (max-width: 480px)
+    padding-bottom: 50px
+
+  p 
+    clear: both
+    font-size: 1.25em
+    line-height: 1.25em
+    display: none
+
+.projects-header
+    margin-top: 0
+    margin: 0
+    text-transform: uppercase
+    letter-spacing: .030px
+
+.project
+    position: relative
+    max-width: 100%
+    margin-right: auto
+    margin-left: auto
+    padding: 30px 150px 30px 150px
+    &:hover
+      background-color: #3b3b3b
+      cursor: pointer
+    @media only screen and (max-width: 680px)
+      padding: 10px 25px
+    a 
+      text-decoration: none
+      color: #FBD655
+      display: block
+
+    .triangle
+      content: " "
+      position: absolute
+      right: 10%
+      top: 35%
+      display: inline-block
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 15px 0 15px 20px
+      border-color: transparent transparent transparent #797152;
+      @media only screen and (max-width: 680px)
+        border-width: 10px 0 10px 15px
+        top: 28%
+        right: 25px
+      @media only screen and (max-width: 380px)
+        visibility: hidden
+
+    .skill-tags
+      clear: both
+      display: flex
+      flex-direction: row
+      padding-left: 0px
+      margin-top: 4px
+      margin-bottom: 4px
+      text-align: center
+
+      li  
+        font-size: .75em
+        width: 70px
+        list-style: none
+        color: #1B1B1B
+        padding: 4px
+        background-color: #FCD748
+        clip-path: polygon(0% 5px, 0px 0%, calc(100% - 5px) 0%, 100% 0px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0px 100%, 0 calc(100% - 5px))
+        // border-radius: 0 4px 0 4px
+        margin-right: 5px
+
+//**************************************************\\
+//************** SOCIAL LINKS SECTION **************\\
+//**************************************************\\
+
+.social-section
+  text-align: center
+  margin-top: 50px
+  // height: 700px
+  width: 100%
+  @media only screen and (max-width: 380px)
+    width: 100%
+
+#github 
+  margin-left: auto
+  margin-right: 150px
+  @media only screen and (max-width: 680px)
+    margin-right: 75px
+
+.social-icon
+  max-width: 200px
+  max-height: 200px
+  @media only screen and (max-width: 680px)
+    margin-bottom: 50px
+
+
+//**************************************************\\
+//************ END SOCIAL LINKS SECTION ************\\
+//**************************************************\\
+
+
+
+
+
+//**************************************************\\
+//************** CONTACT LINKS SECTION *************\\
+//**************************************************\\
+
+.contact-section
+  margin-top: 50px
+  width: 100%
+
+  form 
+    width: 60%
+    margin: 0 auto
+    @media only screen and (max-width: 380px)
+      width: 100%
+    label 
+      text-align: left;
+      color: #797152;
+      font-weight: 900;
+      font-size: 50px;
+      display: inline-block;
+      width: 100%;
+      padding-top: 8px
+      padding-bottom: 8px
+      @media only screen and (max-width: 380px)
+        font-size: 30px
+
+  input[type=text], input[type=email], textarea 
+    width: 100%
+    line-height: 50px
+    font-size: 50px
+    border: none
+    border-radius: 4px
+    background-color: #5a5959
+    text-align: center
+    @media only screen and (max-width: 380px)
+      line-height: 40px
+      font-size: 30px
+    
+
+#btn-container
+  margin-top: 25px
+  text-align: center
+
+
+
+
+
+
+
+    
+    
+  
+
